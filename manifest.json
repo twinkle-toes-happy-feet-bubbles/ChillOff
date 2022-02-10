@@ -1,0 +1,19 @@
+{
+
+"theme_color" : "#696969"
+
+"background_color" : "#070707"
+
+"display" : "fullscreen"
+
+"scope" : "/"
+
+"start_url" : "/index.html"
+
+"name" : "Wordle Chilloff"
+
+"short_name" : "Wordle CF"
+
+"description" : "Wordle is an online 5-letter word game. Players select letters of the alphabet on the virtual keyboard and enter them into the 5 blank tiles. When they're happy with their 5-letter word guess, they press the submit button. Grey letter means its not in the word. Yellow letter means its in the word but its in wrong place. Then there's the green letter which means it's in the word and in the right place."
+
+}
