@@ -23,7 +23,8 @@ body {
   font-size: clamp(.5rem, 2.5vmin, 1.5rem);
 
 }
-
+p{
+  color: lightgrey; font-family: monospace; font-size: 15px; text-align: center;}
 .keyboard {
 
   display: grid;
