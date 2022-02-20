@@ -15208,7 +15208,7 @@ const guessGrid = document.querySelector("[data-guess-grid]")
 var shareFb = document.getElementById("shareFb");
 var shareTwit = document.getElementById("shareTwit");
 var shareWhat = document.getElementById("shareWhat");
-//const offsetFromDate = new Date(2022, 0, 1)
+const offsetFromDate = new Date(2022, 0, 1)
 let shareMessagePre = "My Todays ChillOff"
 let shareMessage = ""
 let shareableEmoji
@@ -15217,7 +15217,7 @@ function randomDate(start, end) {
   return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
 }
 
-const offsetFromDate = randomDate(new Date(2012, 0, 1), new Date());
+//const offsetFromDate = randomDate(new Date(2012, 0, 1), new Date());
 
 const msOffset = Date.now() - offsetFromDate
 const dayOffset = msOffset / 1000 / 60 / 60 / 24
