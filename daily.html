@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="bg.css">
+
+  <link rel="stylesheet" href="results.css">
+
+  <title>ChillOff - Daily - Play Online</title>
+
+</head>
+
+<body>
+
+  <!--
+
+  <div class="word">
+
+    <span>C</span>
+
+    <span>H</span>
+
+    <span>I</span>
+
+    <span>L</span>
+
+    <span>L</span>
+
+    <span>O</span>
+
+    <span>F</span>
+
+    <span>F</span>
+
+    <span>.</span>
+
+    <span>C</span>
+
+    <span>F</span>
+
+  </div>
+
+  -->
+
+    <h2>ChillOff ° CF<br> <i>Daily</i></h2>
+
+    <button id="share" onclick="resultMessage()" style="display: none;" class="big-button">Copy Results</button>
+
+    <br>
+
+  
+
+  <button id="resultBoard" style="display: none;">
+
+  Share on Facebook!!>
+
+  
+
+ 
+
+  
+
+    <button id="shareTwit" class="finalBtn" style="display: none;" 
+
+      data-sharer="twitter" 
+
+      data-title="Daily Dose of ChillOff" 
+
+      data-hashtags="awesome, ChillOff.cf" 
+
+      data-url="https://chilloff.cf">Share on Twitter</button>
+
+      
+
+      <button id="shareWhat" class="finalBtn" style="display: none;" 
+
+      data-sharer="whatsapp" data-title="Checkout my todays ChillOff " data-url="https://chilloff.cf">Share on Whatsapp</button>
+
+  
+
+    <button id="shareFb" class="finalBtn" style="display: none;"
+
+        data-sharer="facebook" 
+
+        data-title="Daily Dose of ChillOff"
+
+        data-hashtags="ChillOff.cf"
+
+        data-url="https://chilloff.cf">
+
+        Share on Facebook
+
+    </button>
+
+  </button>
+
+  <br>
+
+  <div class="alert-container" data-alert-container></div>
+
+  <div data-guess-grid class="guess-grid">
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+    <div class="tile"></div>
+
+  </div>
+
+  <div data-keyboard class="keyboard">
+
+    <button class="key" data-key="Q">Q</button>
+
+    <button class="key" data-key="W">W</button>
+
+    <button class="key" data-key="E">E</button>
+
+    <button class="key" data-key="R">R</button>
+
+    <button class="key" data-key="T">T</button>
+
+    <button class="key" data-key="Y">Y</button>
+
+    <button class="key" data-key="U">U</button>
+
+    <button class="key" data-key="I">I</button>
+
+    <button class="key" data-key="O">O</button>
+
+    <button class="key" data-key="P">P</button>
+
+    <div class="space"></div>
+
+    <button class="key" data-key="A">A</button>
+
+    <button class="key" data-key="S">S</button>
+
+    <button class="key" data-key="D">D</button>
+
+    <button class="key" data-key="F">F</button>
+
+    <button class="key" data-key="G">G</button>
+
+    <button class="key" data-key="H">H</button>
+
+    <button class="key" data-key="J">J</button>
+
+    <button class="key" data-key="K">K</button>
+
+    <button class="key" data-key="L">L</button>
+
+    <div class="space"></div>
+
+    <button data-enter class="key large">Enter</button>
+
+    <button class="key" data-key="Z">Z</button>
+
+    <button class="key" data-key="X">X</button>
+
+    <button class="key" data-key="C">C</button>
+
+    <button class="key" data-key="V">V</button>
+
+    <button class="key" data-key="B">B</button>
+
+    <button class="key" data-key="N">N</button>
+
+    <button class="key" data-key="M">M</button>
+
+    <button data-delete class="key large" onclick="deleteKey()">
+
+      <svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 0 24 24" width="25">
+
+        <path fill="var(--color-tone-1)" d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z"></path>
+
+      </svg>
+
+    </button>
+
+  </div>
+
+ <br>
+
+ <br>
+
+ <button type="button" class="collapsible"><b>How to play?</b></button>
+
+<div class="content">
+
+     <p style="text-align: center;"><br><br>ChillOff is an online 5-letter word game.
+
+       Players select letters of the alphabet on the virtual keyboard and enter them into the 5 blank tiles. When they're happy with their 5-letter word guess, they press the submit button. Grey letter means its not in the word. Yellow letter means its in the word but its in wrong place. Then there's the green letter which means it's in the word and in the right place.<br><br>© ChillOff 2022</p>
+
+</div>
+
+ 
+
+   <script src="daily.js" defer></script>
+
+   <script src="sharer.min.js" defer></script>
+
+</body>
+
+</html>
+
